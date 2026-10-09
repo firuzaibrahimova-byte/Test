@@ -529,6 +529,10 @@ em { font-style: normal; }
   .top-meta { display: none; }
 }
 @media (max-width: 1023px) {
+  .hero-head { --name: min(17.4vw, 23svh); }
+  .board-tool, .drag-n1 { display: none; }
+  .drag-n2 { top: calc(var(--header) + 3svh); }
+  .drag-n3 { left: auto; right: var(--gutter); top: calc(var(--header) + 24svh); }
   .about-l, .facts { grid-column: 1 / -1; }
   .about-sticky { position: static; }
   .facts { padding-top: 40px; }

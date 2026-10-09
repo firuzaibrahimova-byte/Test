@@ -142,7 +142,8 @@ export function initHero(stage: HTMLElement): () => void {
       drags.forEach((d, i) => {
         const depth = parseFloat(d.dataset.depth || "1");
         const x = snx * 16 * depth;
-        const y = sny * 12 * depth - ed * 46 * depth;
+        const drift = parseFloat(d.dataset.drift || "-1");
+        const y = sny * 12 * depth + ed * 46 * depth * drift;
         if (Math.abs(x - par[i].x) > 0.05 || Math.abs(y - par[i].y) > 0.05) {
           par[i].x = x; par[i].y = y;
           d.style.setProperty("--mx", x.toFixed(2) + "px");

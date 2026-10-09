@@ -9,8 +9,8 @@ export function Hero() {
         <div className="board" aria-hidden="true">
           <div className="drag drag-bulb" data-depth="0.5"><div className="drag-in" style={{ ["--rot" as string]: "-10deg" }}><img src="/stickers/bulb.svg" alt="" draggable={false} /></div></div>
           <div className="drag drag-spark" data-depth="0.35"><div className="drag-in"><img src="/stickers/spark.svg" alt="" draggable={false} /></div></div>
-          <div className="drag drag-n1" data-depth="1"><div className="drag-in" style={{ ["--rot" as string]: "-3deg" }}><div className="note"><span className="note-t">Based in Baku, open to remote</span><span className="note-by"><i>F</i>Firuza</span></div></div></div>
-          <div className="drag drag-n2" data-depth="0.8"><div className="drag-in" style={{ ["--rot" as string]: "2.5deg" }}><div className="note note-paper"><span className="note-t">Organizer at Friends of Figma Baku</span><span className="note-by"><i>F</i>Firuza</span></div></div></div>
+          <div className="drag drag-n1" data-depth="1" data-drift="0.5"><div className="drag-in" style={{ ["--rot" as string]: "-3deg" }}><div className="note"><span className="note-t">Based in Baku, open to remote</span><span className="note-by"><i>F</i>Firuza</span></div></div></div>
+          <div className="drag drag-n2" data-depth="0.8" data-drift="0.6"><div className="drag-in" style={{ ["--rot" as string]: "2.5deg" }}><div className="note note-paper"><span className="note-t">Organizer at Friends of Figma Baku</span><span className="note-by"><i>F</i>Firuza</span></div></div></div>
           <div className="drag drag-n3" data-depth="1.2"><div className="drag-in" style={{ ["--rot" as string]: "-2deg" }}><div className="note"><span className="note-t">Leading a team of 4 designers</span><span className="note-by"><i>F</i>Firuza</span></div></div></div>
         </div>
 
